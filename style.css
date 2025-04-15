@@ -1,3 +1,4 @@
+
 * {
     scroll-behavior: smooth;
     margin: 0;
@@ -213,4 +214,221 @@ ol li {
 #fun-facts-list {
     display: flex;
     align-items: center;
+=======
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 1rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/* === SECTION LAYOUT === */
+/* This applies to all sections of the page */
+section {
+    /* min-height: 100vh; */
+    /* Make each section at least the full height of the screen */
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-shadow: inset 0 -1px 10px rgba(0, 0, 0, 0.244);
+}
+/* === SECTION BACKGROUNDS === */
+/* Background design for different sections */
+#about {
+    background-image: url("imgs/background-picture.avif");
+    background-color: rgba(255, 255, 255, 0.7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: lighten;
+    color: #000;
+    text-align: right;
+}
+
+#fun-facts {
+    background: linear-gradient(135deg, #fff1eb, #ace0f9);
+    padding-right: 2rem;
+}
+
+#the-pink-armadillo {
+    background: linear-gradient(135deg, #f2a0b7, #fff5f7);
+}
+
+#gallery {
+    background: linear-gradient(120deg, #e0f7fa, #ffffff);
+}
+
+/* === SECTION TEXT === */
+/* Text block inside the "about" section */
+.about-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0 1rem;
+}
+
+/* Layout for sections with two parts (text + image) */
+.hero-info,
+.fun-info,
+.pink-info {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === SECTION IMAGES (NOT GALLERY) === */
+/* This class is only for images inside regular sections */
+.imgs {
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+/* === GALLERY SECTION === */
+#gallery {
+    display: block;
+    width: 100%;
+}
+
+/* Gallery cards */
+.img-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: 0 auto;
+}
+
+/* Images inside the gallery */
+.img-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Hover effect for gallery card */
+.img-card:hover {
+    background-color: #29454525
+}
+
+/* Text under each gallery image */
+.img-card p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 0.25rem 0.5rem;
+    font-weight: 600;
+}
+
+/* === SECTION TITLES === */
+.main-title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(68, 47, 47);
+    font-weight: bold;
+    background-color: rgba(150, 150, 130, 0.71);
+    gap: 1px;
+}
+
+.dancing-armadillo {
+    width: 60px;
+    height: auto;
+}
+
+/* === FOOTER === */
+/* Bottom part of the site */
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    background-image: url("imgs/footerimage.avif");
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    color: #e1e6e8;
+    font-weight: bold;
+    text-align: right;
+    width: 100%;
+}
+
+/* Links in the footer */
+.footer-nav a {
+    color: #ccd9dc;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: white;
+}
+
+/* === FUN FACTS LIST === */
+ol {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-self: center;
+}
+
+/* Each list item */
+ol li {
+    overflow-x: visible;
+    text-wrap: wrap;
+}
+
+#fun-facts-list {
+    display: flex;
+    align-items: center;
+>>>>>>> 678c9eeabf7fd20de5bb8a6d419c875fc791fbb4
 }
